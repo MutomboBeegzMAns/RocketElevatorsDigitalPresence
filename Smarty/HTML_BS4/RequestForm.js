@@ -137,36 +137,17 @@ var TotalCost = $("#GrandTotal");
 /////////////////////////////////////////////////////////////////////////// 
 
 
-     
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Selector options //
   function Overall(){
     if ($("#contact_buildingtype").val() == "Residential"){
-        return calcResInstallcost();
-    };
+      return calcResInstallcost();
+    }
     else if ($("#contact_buildingtype").val() == "Commercial"){
       return calcComInstallcost();
-    };
+    }
     else if ($("#contact_buildingtype").val() == "Corporate"){
       return calcCorpInstallcost();
-    };
+    }
     else if ($("#contact_buildingtype").val() == "Hybrid"){
       return calcHybInstallcost();
     };
